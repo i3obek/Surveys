@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ankieteks</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<!--Navbar-->
+<nav class="bg-gray-200">
+    <!--Container-->
+    <div class="relative container mx-auto py-3">
+        <!--Flex container-->
+        <div class="flex items-center justify-between">
+            <!--Logo-->
+            <a href="index.html">
+                <img
+                     src="img/survey.png"
+                     onmouseover="src='img/survey-hover.png'"
+                     onmouseout="src='img/survey.png'"
+                     width="64"
+                     alt="Surveys"
+                >
+            </a>
+            <!--Menu items-->
+            <!--For medium devices set display-none-->
+            <!--For bigger devices set display-flex-->
+            <div class="hidden md:flex pl-4 space-x-10">
+                <a href="survey-wizard.html" class="hover:text-red-700 text-xl whitespace-nowrap transition-colors">Kreator ankiet</a>
+                <a href="#" class="hover:text-red-700 text-xl transition-colors">Wypełnij</a>
+                <a href="#" class="hover:text-red-700 text-xl transition-colors">Kategorie</a>
+            </div>
+            <!--Buttons-->
+            <div class="flex ml-5 mr-1 space-x-3 whitespace-nowrap">
+                <a href="#"
+                   class="hidden md:block p-2 px-4 text-lg rounded-full bg-white hover:bg-gray-100 transition-colors">
+                    Zaloguj się
+                </a>
+
+                <a href="#"
+                   class="hidden md:block p-2 px-4 text-lg text-white bg-brightRed rounded-full hover:bg-brightRedLight transition-colors">
+                    Dołącz do nas!
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<!--Hero Section-->
+<section id="hero">
+    <div class="container flex flex-col md:mb-5 md:flex-row items-center px-6 mx-auto">
+        <!--Left item-->
+        <div class="flex flex-col pt-10 md:w-full lg:w-1/2">
+            <h1 class="flex md:mx-auto lg:mx-0 sm:max-w-lg text-4xl font-bold text-center md:text-5xl md:text-left">
+                Twórz własne ankiety w najprostszy sposób.
+            </h1>
+            <div class="flex flex-row md:mx-auto lg:mx-0 justify-center pt-16 md:justify-start">
+                <a href="survey-wizard.html">
+                    <button class="p-3 px-4 text-lg text-white bg-brightRed rounded-full whitespace-nowrap hover:bg-brightRedLight transition-colors">
+                        Kliknij i stwórz ankietę w kilka minut
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!--Image item-->
+        <div class="hidden pt-9 lg:flex md:w-1/2">
+            <img src="img/hero-img.jpg" alt="img" class="rounded-tl-full">
+        </div>
+    </div>
+
+</section>
+
+<!--Features Section-->
+<section id="features">
+    <!--Flex container-->
+    <div class="container flex flex-col px-4 items-center mx-auto pt-20 md:pt-4 md:mt-12 lg:mt-0 space-y-0 md:space-y-0 md:flex-row">
+        <!--Numbered List-->
+        <div class="flex flex-col md:mx-auto lg:mx-0 space-y-4 md:space-y-2 md:w-1/2">
+            <!--List Item 1-->
+            <div class="flex flex-col md:space-x-6 md:flex-row">
+                <!--Heading-->
+                <div class="rounded-full bg-brightRedSupLight md:bg-transparent">
+                    <div class="flex flex-row items-center space-x-2">
+                        <div class="px-4 py-2 font-bold text-white rounded-full md:py-1 bg-brightRed">
+                            1
+                        </div>
+                        <h3 class="p-4 text-base md:mb-4 md:hidden">
+                            Pytania <strong>otwarte</strong>
+                        </h3>
+                    </div>
+                </div>
+
+                <h3 class="hidden mb-4 text-lg md:block">
+                    Pytania <strong>otwarte</strong>
+                </h3>
+            </div>
+
+            <!--List Item 2-->
+            <div class="flex flex-col md:space-x-6 md:flex-row">
+                <!--Heading-->
+                <div class="rounded-full bg-brightRedSupLight md:bg-transparent">
+                    <div class="flex flex-row items-center space-x-2">
+                        <div class="px-4 py-2 font-bold text-white rounded-full md:py-1 bg-brightRed">
+                            2
+                        </div>
+                        <h3 class="p-4 text-base md:mb-4 md:hidden">
+                            Pytania zamknięte: <strong>A - B - C - D</strong>
+                        </h3>
+                    </div>
+                </div>
+
+                <h3 class="hidden mb-4 text-lg md:block">
+                    Pytania zamknięte: <strong>A - B - C - D</strong>
+                </h3>
+            </div>
+
+            <!--List Item 3-->
+            <div class="flex flex-col md:space-x-6 md:flex-row">
+                <!--Heading-->
+                <div class="rounded-full bg-brightRedSupLight md:bg-transparent">
+                    <div class="flex flex-row items-center space-x-2">
+                        <div class="px-4 py-2 font-bold text-white rounded-full md:py-1 bg-brightRed">
+                            3
+                        </div>
+                        <h3 class="p-4 text-base md:mb-4 md:hidden">
+                            Pytania zamknięte: <strong>TAK - NIE</strong>
+                        </h3>
+                    </div>
+                </div>
+
+                <h3 class="hidden mb-4 text-lg md:block">
+                    Pytania zamknięte: <strong>TAK - NIE</strong>
+                </h3>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
