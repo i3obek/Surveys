@@ -21,7 +21,9 @@ jobs:
         run: composer install --prefer-dist --no-interaction
 
       - name: Install Node dependencies
-        run: npm install --omit=dev && npm run prod
+        run: |
+          npm install --omit=dev
+          npm run prod
 
       - name: Copy environment file
         run: cp .env.example .env
